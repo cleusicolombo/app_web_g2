@@ -1,5 +1,7 @@
 Sebo::Application.routes.draw do
 
+  get "home/index"
+
   resources :books
 
   resources :users
