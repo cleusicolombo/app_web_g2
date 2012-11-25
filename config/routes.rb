@@ -1,5 +1,7 @@
 Sebo::Application.routes.draw do
 
+  resources :users
+
   resources :tests	
   resources :users	
 
