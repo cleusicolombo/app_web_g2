@@ -1,4 +1,4 @@
-<h1>Listing books</h1>
+<h1>Livros Cadastrados</h1>
 
 <table>
   <tr>
@@ -15,13 +15,13 @@
     <td><%= book.isbn %></td>
     <td><%= book.title %></td>
     <td><%= book.author %></td>
-    <td><%= link_to 'Show', book %></td>
-    <td><%= link_to 'Edit', edit_book_path(book) %></td>
-    <td><%= link_to 'Destroy', book, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Ver', book %></td>
+    <td><%= link_to 'Editar', edit_book_path(book) %></td>
+    <td><%= link_to 'Destruir', book, confirm: 'Tem certeza?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to 'Novo Livro', new_book_path %>

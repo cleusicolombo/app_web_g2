@@ -1,10 +1,10 @@
-<h1>Listing usersbooks</h1>
+<h1>Livros de Usuarios Cadastrados</h1>
 
 <table>
   <tr>
-    <th>Users</th>
-    <th>Books</th>
-    <th>Value</th>
+    <th>Usuario</th>
+    <th>Livro</th>
+    <th>Valor</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,13 +15,13 @@
     <td><%= usersbook.users_id %></td>
     <td><%= usersbook.books_id %></td>
     <td><%= usersbook.value %></td>
-    <td><%= link_to 'Show', usersbook %></td>
-    <td><%= link_to 'Edit', edit_usersbook_path(usersbook) %></td>
-    <td><%= link_to 'Destroy', usersbook, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Ver', usersbook %></td>
+    <td><%= link_to 'Editar', edit_usersbook_path(usersbook) %></td>
+    <td><%= link_to 'Destruir', usersbook, confirm: 'Tem certeza?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Usersbook', new_usersbook_path %>
+<%= link_to 'Novo Livro de Usuario', new_usersbook_path %>
