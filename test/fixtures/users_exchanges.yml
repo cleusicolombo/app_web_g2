@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  users_id_1: 1
+  users_id_2: MyString
+  integer: MyString
+  books_id_1: 1
+  books_id_2: MyString
+  integer: MyString
+
+two:
+  users_id_1: 1
+  users_id_2: MyString
+  integer: MyString
+  books_id_1: 1
+  books_id_2: MyString
+  integer: MyString

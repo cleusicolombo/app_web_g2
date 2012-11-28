@@ -3,6 +3,7 @@ Sebo::Application.routes.draw do
   get "home/index"
 
   resources :usersbooks
+  resources :users_exchanges
   resources :books
   resources :users
 
