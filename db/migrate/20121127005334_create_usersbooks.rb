@@ -1,9 +1,8 @@
 class CreateUsersbooks < ActiveRecord::Migration
   def change
     create_table :usersbooks do |t|
-      t.integer :users_id
-      t.integer :books_id
-      t.float :value
+      t.integer :user_id
+      t.integer :book_id
 
       t.timestamps
     end
