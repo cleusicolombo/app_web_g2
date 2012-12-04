@@ -44,7 +44,7 @@ class UsersExchangesController < ApplicationController
 
     respond_to do |format|
       if @users_exchange.save
-        format.html { redirect_to @users_exchange, notice: 'Users exchange was successfully created.' }
+        format.html { redirect_to @users_exchange, notice: 'Troca criada com sucesso!' }
         format.json { render json: @users_exchange, status: :created, location: @users_exchange }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class UsersExchangesController < ApplicationController
 
     respond_to do |format|
       if @users_exchange.update_attributes(params[:users_exchange])
-        format.html { redirect_to @users_exchange, notice: 'Users exchange was successfully updated.' }
+        format.html { redirect_to @users_exchange, notice: 'Troca atualizada com sucesso!' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

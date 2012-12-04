@@ -44,7 +44,7 @@ class UsersbooksController < ApplicationController
 
     respond_to do |format|
       if @usersbook.save
-        format.html { redirect_to @usersbook, notice: 'Usersbook was successfully created.' }
+        format.html { redirect_to @usersbook, notice: 'Registro criado com sucesso!' }
         format.json { render json: @usersbook, status: :created, location: @usersbook }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class UsersbooksController < ApplicationController
 
     respond_to do |format|
       if @usersbook.update_attributes(params[:usersbook])
-        format.html { redirect_to @usersbook, notice: 'Usersbook was successfully updated.' }
+        format.html { redirect_to @usersbook, notice: 'Registro atualizado com sucesso!' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
