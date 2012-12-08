@@ -2,7 +2,13 @@
   # GET /usersbooks
   # GET /usersbooks.json
   def index
-    @usersbooks = Usersbook.all
+    if params[:users_id]
+      @usersbooks = User.find(params[:users_id]).usersbooks
+    elsif params[:books_id]
+      @usersbooks = Book.find(params[:books_id]).usersbooks
+    else
+      @usersbooks = Usersbook.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

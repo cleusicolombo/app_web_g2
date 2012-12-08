@@ -1,8 +1,17 @@
 class User < ActiveRecord::Base
+  attr_accessible :name, :email, :login, :password
 
-  attr_accessible :nome, :email, :login, :senha
-
-  validates :nome, :email, :login, :senha, :presence => true
-  validates :nome, :email, :login, :uniqueness => true
+  validates :name, :email, :login, :password, :presence => true
+  validates :email, :login, :uniqueness => {:case_sensitive => false}#true
+  #validates :login, :case_sensitive => true
+  
+    def authenticate password
+    #user = find_by_username(username)
+    if self && self.password == password
+      self
+    else
+      nil
+    end
+  end
 
 end

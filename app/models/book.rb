@@ -1,7 +1,6 @@
-class Book < ActiveRecord::Base
-  attr_accessible :ISBN, :titulo, :autor
+﻿class Book < ActiveRecord::Base
+  attr_accessible :isbn, :title, :author
 
-  validates :ISBN, :titulo, :autor, :presence => true
-  validates :ISBN, :uniqueness => true
+  validates :isbn, :title, :author, :presence => true
 
 end

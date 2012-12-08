@@ -13,11 +13,13 @@
 
   <div class="field">
     <%= f.label :usuário %><br />
-    <%= f.number_field :users_id %>
+    <%= f.collection_select(:users_id, User.all, :id, :login) %>
+	
   </div>
   <div class="field">
-    <%= f.label :livro %><br />
-    <%= f.number_field :books_id %>
+    <%= f.label :título %><br />
+    <%= f.collection_select(:books_id, Book.all, :id, :title) %>
+
   </div>
   <div class="field">
     <%= f.label :valor %><br />
