@@ -1,9 +1,9 @@
-<h1>Trocas de Livros Registradas</h1>
+﻿<h1>Trocas de Livros Registradas</h1>
 
 <table>
   <tr>
-    <th>Usuario1</th>
-    <th>Usuario2</th>
+    <th>Usuário1</th>
+    <th>Usuário2</th>
     <th>Livro1</th>
     <th>Livro2</th>
     <th></th>
@@ -21,7 +21,7 @@
     <td><%= users_exchange.integer %></td>
     <td><%= link_to 'Ver', users_exchange %></td>
     <td><%= link_to 'Editar', edit_users_exchange_path(users_exchange) %></td>
-    <td><%= link_to 'Deletar', users_exchange, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Deletar', users_exchange, confirm: 'Tem certeza?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
@@ -29,6 +29,6 @@
 <br />
 
 <%= link_to 'Nova Troca de Livro', new_users_exchange_path %>
-<p><%= link_to "Home", root_path %></p>
-<p><%= link_to "Usuarios", users_path %></p>
+<p><%= link_to "Capa", root_path %></p>
+<p><%= link_to "Usuários", users_path %></p>
 <p><%= link_to "Livros", books_path %></p>

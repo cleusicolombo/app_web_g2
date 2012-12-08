@@ -1,4 +1,4 @@
-<%= form_for(@users_exchange) do |f| %>
+﻿<%= form_for(@users_exchange) do |f| %>
   <% if @users_exchange.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@users_exchange.errors.count, "error") %> prohibited this users_exchange from being saved:</h2>
@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :usuario1 %><br />
+    <%= f.label :usuário1 %><br />
     <%= f.number_field :users_id_1 %>
   </div>
   <div class="field">
-    <%= f.label :usuario2 %><br />
+    <%= f.label :usuário2 %><br />
     <%= f.text_field :users_id_2 %>
   </div>
   <div class="field">

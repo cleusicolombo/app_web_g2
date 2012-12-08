@@ -1,4 +1,4 @@
-class BooksController < ApplicationController
+﻿class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index

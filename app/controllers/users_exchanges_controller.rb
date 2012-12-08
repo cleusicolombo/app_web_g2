@@ -1,4 +1,4 @@
-class UsersExchangesController < ApplicationController
+﻿class UsersExchangesController < ApplicationController
   # GET /users_exchanges
   # GET /users_exchanges.json
   def index
