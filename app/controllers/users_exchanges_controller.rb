@@ -2,7 +2,21 @@
   # GET /users_exchanges
   # GET /users_exchanges.json
   def index
-    @users_exchanges = UsersExchange.all
+    if params[:users_id_1]
+      @users_exchanges = User.find(params[:users_id_1]).users_exchanges
+	  @users_exchanges = UsersExchange.new(:users_id_1=> params[:users_exchange])
+    elsif params[:users_id_2]
+      @users_exchanges = User.find(params[:users_id_2]).users_exchanges
+	  @users_exchanges = UsersExchange.new(:users_id_2=> params[:users_exchange])
+	elsif params[:books_id_1]
+      @users_exchanges = Book.find(params[:books_id_1]).users_exchanges
+	  @users_exchanges = UsersExchange.new(:books_id_1=> params[:users_exchange])
+	elsif params[:books_id_2]
+      @users_exchanges = Book.find(params[:books_id_2]).users_exchanges
+	  @users_exchanges = UsersExchange.new(:books_id_2=> params[:users_exchange])
+    else
+      @users_exchanges = UsersExchange.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

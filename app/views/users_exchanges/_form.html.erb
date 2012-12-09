@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :usuário1 %><br />
-    <%= f.number_field :users_id_1 %>
+    <%= f.collection_select(:users_id_1, User.all, :id, :login) %>
   </div>
   <div class="field">
     <%= f.label :usuário2 %><br />
-    <%= f.text_field :users_id_2 %>
+    <%= f.collection_select(:users_id_2, User.all, :id, :login) %>
   </div>
   <div class="field">
-    <%= f.label :livro1 %><br />
-    <%= f.number_field :books_id_1 %>
+    <%= f.label :título1 %><br />
+    <%= f.collection_select(:books_id_1, Book.all, :id, :title) %>
   </div>
   <div class="field">
-    <%= f.label :livro2 %><br />
-    <%= f.text_field :books_id_2 %>
+    <%= f.label :título2 %><br />
+    <%= f.collection_select(:books_id_2, Book.all, :id, :title) %>
   </div>
   </div>
   <div class="actions">
