@@ -5,7 +5,7 @@
 h1{
 	color: white;
 	text-align: center;
-	background-color: brown;
+	background-color: chocolate;
 	border-style: dotted;
 	border-color: white;
 	border-size: 4px;
@@ -22,6 +22,33 @@ h1{
 	border: 5;  
 }
 
+.foto2{
+	position: absolute;
+	top: 200px;
+	right: 50px;
+	width: 800;
+	height: 250;
+	border: 5;  
+}
+
+.foto3{
+	position: absolute;
+	top: 250px;
+	right: 300px;
+	width: 800;
+	height: 250;
+	border: 5;  
+}
+
+.foto4{
+	position: absolute;
+	top: 200px;
+	right: 450px;
+	width: 800;
+	height: 250;
+	border: 5;  
+}
+
 ul
 {
 	list-style-type: none;
@@ -29,6 +56,8 @@ ul
 	padding: 0;
 	width: 100px;
 }
+
+
 
 li
 {
@@ -39,14 +68,84 @@ li
 }
 
 p
-{
+{	
+	height: 15px;
+	width: 200px;
+	padding: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Helvetica Neue',helvetica,'microsoft sans serif',arial,sans-serif;
+	font-size: 2px;
 	color: white;
-	text-decoration: none;
-	margin-top: 40px;
+	background: chocolate;
+	cursor: pointer;
 }
 
 p:hover
 {
-	color: black;
+	color: brown;
 	background-color: white;
+	text-decoration: italic;
 }
+
+p:visited
+{
+	color: burlywood;
+}
+
+p:active
+{
+	color: brown;
+}
+
+#cssmenu {
+	width: 100%;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+	background: #000000 url(images/bg-bubplastic.gif) top left repeat-x;
+}
+#cssmenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#cssmenu ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: transparent url(images/bg-bubplastic-button.gif) top left no-repeat;
+}
+
+#cssmenu ul li a {
+	display: block;
+	height: 27px;
+	padding-left: 35px;
+	float: left;
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue',helvetica,'microsoft sans serif',arial,sans-serif;
+	font-size: 70%;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#cssmenu ul li a span {
+	display: block;
+	float: left;
+	height: 22px;
+	padding-top: 5px;
+	padding-right: 35px;
+	background: transparent url(images/bg-bubplastic-button.gif) top right no-repeat;
+	cursor: pointer;
+}
+
+
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+	background: transparent url(images/bg-bubplastic-h-red.gif) top left no-repeat;
+}
+#cssmenu ul li a:hover span,
+#cssmenu ul li.active a span {
+	background: transparent url(images/bg-bubplastic-h-red.gif) top right no-repeat;
+}
+
