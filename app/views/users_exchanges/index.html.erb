@@ -6,9 +6,7 @@
     <th>Usuário2</th>
     <th>Livro1</th>
     <th>Livro2</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Ações</th>
   </tr>
 
 <% @users_exchanges.each do |users_exchange| %>
@@ -19,16 +17,16 @@
     <td><%= users_exchange.books_id_1 %></td>
     <td><%= users_exchange.books_id_2 %></td>
     <td><%= users_exchange.integer %></td>
-    <td><%= link_to 'Ver', users_exchange %></td>
-    <td><%= link_to 'Editar', edit_users_exchange_path(users_exchange) %></td>
-    <td><%= link_to 'Deletar', users_exchange, confirm: 'Tem certeza?', method: :delete %></td>
+    <td><%= link_to 'Ver', users_exchange %>
+    <%= link_to 'Editar', edit_users_exchange_path(users_exchange) %>
+    <%= link_to 'Deletar', users_exchange, confirm: 'Tem certeza?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nova Troca de Livro', new_users_exchange_path %>
+<p><%= link_to 'Nova Troca de Livro', new_users_exchange_path %></p>
 <p><%= link_to "Capa", root_path %></p>
 <p><%= link_to "Usuários", users_path %></p>
 <p><%= link_to "Livros", books_path %></p>

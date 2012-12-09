@@ -5,7 +5,7 @@
     <th>ISBN</th>
     <th>Título</th>
     <th>Autor</th>
-    <th></th>
+    <th>Ações</th>
     <th></th>
     <th></th>
   </tr>
@@ -15,14 +15,14 @@
     <td><%= book.isbn %></td>
     <td><%= book.title %></td>
     <td><%= book.author %></td>
-    <td><%= link_to 'Ver', book %></td>
-    <td><%= link_to 'Editar', edit_book_path(book) %></td>
-    <td><%= link_to 'Destruir', book, confirm: 'Tem certeza?', method: :delete %></td>
+    <td><%= link_to 'Ver', book %>
+    <%= link_to 'Editar', edit_book_path(book) %>
+    <%= link_to 'Destruir', book, confirm: 'Tem certeza?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Novo Livro', new_book_path %>
+<p><%= link_to 'Novo Livro', new_book_path %></p>
 <p><%= link_to "Capa", root_path %></p>
