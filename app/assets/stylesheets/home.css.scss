@@ -14,12 +14,22 @@ h1{
 	font-size: 35px;
 }
 
-.foto{
+h1:hover{
+	text-shadow:0 0 0.2em #F87, 0 0 0.2em #F87;
+	box-shadow: 0 0 10px chocolate;
+}
+
+.foto1{
 	float: left;
-	margin-top: 30px;
-	width: 800;
-	height: 250;
-	border: 5;  
+	margin-top: 20px;
+	border-style: solid;
+	border-color: chocolate;
+	border-size: 4px;
+}
+
+.foto1:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px chocolate;
 }
 
 .foto2{
@@ -31,6 +41,12 @@ h1{
 	border: 5;  
 }
 
+.foto2:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px chocolate;
+}
+
+
 .foto3{
 	position: absolute;
 	top: 250px;
@@ -38,6 +54,11 @@ h1{
 	width: 800;
 	height: 250;
 	border: 5;  
+}
+
+.foto3:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px chocolate;
 }
 
 .foto4{
@@ -49,22 +70,25 @@ h1{
 	border: 5;  
 }
 
+.foto4:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px chocolate;
+}
+
 ul
 {
 	list-style-type: none;
-	border: 1px solid blue;
-	padding: 0;
+	border: 1px solid brown;
+	padding: 10px;
 	width: 100px;
 }
-
-
 
 li
 {
 	padding-left: 10px;
 	padding-top: 0;
-	margin: 1px;
-	background-color: blue;
+	margin: 2px solid brown;
+	background-color: white;
 }
 
 p
@@ -81,11 +105,11 @@ p
 	cursor: pointer;
 }
 
-p:hover
+p:link
 {
-	color: brown;
-	background-color: white;
-	text-decoration: italic;
+	color: white;
+	background: chocolate;
+	cursor: pointer;
 }
 
 p:visited
@@ -93,9 +117,45 @@ p:visited
 	color: burlywood;
 }
 
+p:hover
+{
+	color: brown;
+	background-color: white;
+    box-shadow: 0 0 10px chocolate;
+}
+
 p:active
 {
 	color: brown;
+}
+
+table{
+	float: right;
+	width: 75%;
+	border: 2px solid brown;
+	background-color: white;
+	color: brown;
+}
+
+table:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px chocolate;
+}
+
+td{
+	color: chocolate;
+	background-color: khaki;
+	font-size: 2px;
+	text-align: center;
+}
+
+.field{
+	color: chocolate;
+	background-color: khaki;
+	font-size: 20px;
+	float: left;
+	padding:20px;
+	text-align: center;
 }
 
 #cssmenu {
