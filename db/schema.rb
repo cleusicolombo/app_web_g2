@@ -32,10 +32,9 @@ ActiveRecord::Schema.define(:version => 20121127232115) do
 
   create_table "users_exchanges", :force => true do |t|
     t.integer  "users_id_1"
-    t.string   "users_id_2"
-    t.string   "integer"
+    t.integer  "users_id_2"
     t.integer  "books_id_1"
-    t.string   "books_id_2"
+    t.integer  "books_id_2"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -43,9 +42,12 @@ ActiveRecord::Schema.define(:version => 20121127232115) do
   create_table "usersbooks", :force => true do |t|
     t.integer  "users_id"
     t.integer  "books_id"
-    t.float    "value"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.float    "value",      :default => 0.0
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
+
+  add_index "usersbooks", ["books_id"], :name => "index_usersbooks_on_books_id"
+  add_index "usersbooks", ["users_id"], :name => "index_usersbooks_on_users_id"
 
 end
