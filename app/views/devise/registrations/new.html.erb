@@ -6,7 +6,14 @@
 
 </head>
 <body style="background-color: burlywood">
-
+  
+  <div class="fotoX">
+		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlAAzZHAK5MTGjyTTP5KBAdJJ3IX7flMDz7H9NNqZISzcN-5p" 
+			width="400"
+			height="300"
+			alt="Sebo OnlineX" 
+			title="Sebo OnlineX"/>
+  </div> 
 
 	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 	<%= devise_error_messages! %>
@@ -27,14 +34,6 @@
   <%= f.password_field :password_confirmation %></div><br />
 
   <div><%= f.submit "Cadastrar" %></div><br />
-  
-  <div class="fotoX">
-		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlAAzZHAK5MTGjyTTP5KBAdJJ3IX7flMDz7H9NNqZISzcN-5p" 
-			width="400"
-			height="300"
-			alt="Sebo OnlineX" 
-			title="Sebo OnlineX"/>
-  </div> 
   
 <% end %>
 

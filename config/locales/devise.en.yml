@@ -17,13 +17,13 @@ en:
       unauthenticated: 'Voce precisa se inscrever ou se cadastrar antes de continuar.'
       unconfirmed: 'Voce tem que confirmar a sua conta antes de continuar.'
       locked: 'Sua conta esta bloqueada.'
-      invalid: 'E-mail ou senha incorreto'
+      invalid: 'E-mail ou senha incorreto!'
       invalid_token: 'token de autenticacao invalido.'
       timeout: 'Sua sessao expirou, por favor, entrar novamente para continuar.'
       inactive: 'Sua conta nao foi ativado ainda.'
     sessions:
-      signed_in: 'Logado com sucesso.'
-      signed_out: 'Voce saiu.'
+      signed_in: 'Logado com sucesso!'
+      signed_out: 'Voce saiu!'
     passwords:
       send_instructions: 'Voce recebera um e-mail com instrucoes sobre como redefinir sua senha em alguns minutos.'
       updated: 'Sua senha foi alterada com sucesso. Voce esta agora logado.'

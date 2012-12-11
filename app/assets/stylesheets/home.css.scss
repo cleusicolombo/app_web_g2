@@ -1,4 +1,4 @@
-// Place all the styles related to the home controller here.
+﻿// Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -17,6 +17,19 @@ h1{
 h1:hover{
 	text-shadow:0 0 0.2em #F87, 0 0 0.2em #F87;
 	box-shadow: 0 0 10px chocolate;
+}
+
+#user{
+	text-transform: capitalize;
+	color: chocolate;
+}
+
+#msg{
+	float: right;
+	text-decoration: bold;
+	background-color: transparent;
+	padding: 0;
+	color: chocolate;
 }
 
 .foto1{
@@ -175,6 +188,22 @@ td{
 	text-align: center;
 }
 
+#label1{
+	color: chocolate;
+	background-color: beige;
+	font-size: 15px;
+	width: 30em;
+	padding: 15px;
+}
+
+#label2{
+	color: chocolate;
+	background-color: blanchedalmond;
+	font-size: 15px;
+	width: 30em;
+	padding: 15px;
+}
+
 .field{
 	color: chocolate;
 	background-color: khaki;
@@ -182,6 +211,17 @@ td{
 	padding:15px;
 	width: 20em;
 	text-align: left;
+}
+
+#botao{
+	color: chocolate;
+	background-color: beige;
+	font-size: 10px;
+	padding: 10px;
+	width: 10em;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid brown;
 }
 
 #cssmenu {

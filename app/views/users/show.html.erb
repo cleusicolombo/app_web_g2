@@ -1,25 +1,33 @@
+﻿<h1>Visualização</h1>
+
+  <div class="fotoX">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZuafvVOWc9p_CZsb4RefnisKFbFLKVrS8xeutVNsXT2sDP_gWA" 
+			width="250"
+			height="200"
+			alt="Sebo OnlineX" 
+			title="Sebo OnlineX"/>
+  </div> 
+
 <div id="notice"><%= notice %></div>
 
-<div>
+<b/><b/>
+<div id="label1">
   <b>Nome:</b>
   <%= @user.name %>
 </div>
 
-<div>
+<b/><b/>
+<div id="label2">
   <b>E-mail:</b>
   <%= @user.email %>
 </div>
 
-<div>
+<b/><b/>
+<div id="label1">
   <b>Login:</b>
   <%= @user.login %>
 </div>
 
-<div>
-  <b>Senha:</b>
-  <%= @user.password %>
-</div>
 
-
-<%= link_to 'Editar', edit_user_path(@user) %> |
-<%= link_to 'Voltar', users_path %>
+<p id="botao"><%= link_to 'Editar', edit_user_path(@user) %> </p>
+<p id="botao"><%= link_to 'Voltar', users_path %></p>
