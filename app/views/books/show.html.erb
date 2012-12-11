@@ -1,20 +1,33 @@
-﻿<p id="notice"><%= notice %></p>
+﻿<h1>Visualização de Livro</h1>
 
-<p>
+  <div class="fotoX">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWxfxVmqvOzpXjeBgRcvd1PoWGrhOahgVW59E13bbgEl8YzEkKQ" 
+			width="250"
+			height="200"
+			alt="Sebo OnlineX" 
+			title="Sebo OnlineX"/>
+  </div> 
+
+<div id="notice"><%= notice %></div>
+
+<b/><b/>
+<div id="label1">
   <b>ISBN:</b>
   <%= @book.isbn %>
-</p>
+</div>
 
-<p>
+<b/><b/>
+<div id="label2">
   <b>Título:</b>
   <%= @book.title %>
-</p>
+</div>
 
-<p>
+<b/><b/>
+<div id="label1">
   <b>Autor:</b>
   <%= @book.author %>
-</p>
+</div>
 
 
-<p><%= link_to 'Editar', edit_book_path(@book) %> </p>
-<p><%= link_to 'Voltar', books_path %></p>
+<p id="botao"><%= link_to 'Editar', edit_book_path(@book) %> </p>
+<p id="botao"><%= link_to 'Voltar', books_path %></p>
