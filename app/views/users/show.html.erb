@@ -1,25 +1,25 @@
-﻿<p id="notice"><%= notice %></p>
+<div id="notice"><%= notice %></div>
 
-<p>
+<div>
   <b>Nome:</b>
   <%= @user.name %>
-</p>
+</div>
 
-<p>
+<div>
   <b>E-mail:</b>
   <%= @user.email %>
-</p>
+</div>
 
-<p>
+<div>
   <b>Login:</b>
   <%= @user.login %>
-</p>
+</div>
 
-<p>
+<div>
   <b>Senha:</b>
   <%= @user.password %>
-</p>
+</div>
 
 
-<p><%= link_to 'Editar', edit_user_path(@user) %> </p>
-<p><%= link_to 'Voltar', users_path %></p>
+<%= link_to 'Editar', edit_user_path(@user) %> |
+<%= link_to 'Voltar', users_path %>

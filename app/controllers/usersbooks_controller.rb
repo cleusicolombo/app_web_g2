@@ -1,4 +1,5 @@
 ﻿class UsersbooksController < ApplicationController
+  before_filter :authenticate_user!
   # GET /usersbooks
   # GET /usersbooks.json
   def index

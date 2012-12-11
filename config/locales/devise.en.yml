@@ -1,0 +1,59 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+#encoding: UTF-8
+en:
+  errors:
+    messages:
+      expired: "expirou, por favor, solicitar uma nova"
+      not_found: "nao encontrado"
+      already_confirmed: "ja foi confirmado, por favor, tente entrar"
+      not_locked: "nao foi bloqueada"
+      not_saved:
+        one: "1 erro nao permite que este %{resource} seja salvo:"
+        other: "%{count} erros nao permitem que este %{resource} seja salvo:"
+
+  devise:
+    failure:
+      already_authenticated: 'Voce ja esta logado.'
+      unauthenticated: 'Voce precisa se inscrever ou se cadastrar antes de continuar.'
+      unconfirmed: 'Voce tem que confirmar a sua conta antes de continuar.'
+      locked: 'Sua conta esta bloqueada.'
+      invalid: 'E-mail ou senha incorreto'
+      invalid_token: 'token de autenticacao invalido.'
+      timeout: 'Sua sessao expirou, por favor, entrar novamente para continuar.'
+      inactive: 'Sua conta nao foi ativado ainda.'
+    sessions:
+      signed_in: 'Logado com sucesso.'
+      signed_out: 'Voce saiu.'
+    passwords:
+      send_instructions: 'Voce recebera um e-mail com instrucoes sobre como redefinir sua senha em alguns minutos.'
+      updated: 'Sua senha foi alterada com sucesso. Voce esta agora logado.'
+      updated_not_active: 'Sua senha foi alterada com sucesso.'
+      send_paranoid_instructions: "Se o seu endereco de e-mail existe no nosso banco de dados, voce recebera um link de recuperacao de senha em seu endereco de e-mail em poucos minutos."
+      no_token: "Voce nao pode acessar esta pagina sem chegar a partir de um e-mail de redefinicao de senha Se voce vir de um e-mail de redefinicao de senha, por favor, certifique-se de que voce usou a URL completa fornecida."
+    confirmations:
+      send_instructions: 'Voce recebera um e-mail com instrucoes sobre como confirmar a sua conta em poucos minutos.'
+      send_paranoid_instructions: 'Se o seu endereco de e-mail existe no nosso banco de dados, voce recebera um e-mail com instrucaes sobre como confirmar a sua conta em poucos minutos.'
+      confirmed: 'Sua conta foi confirmada com sucesso. Voce esta agora logado.'
+    registrations:
+      signed_up: 'Bem-vindo! Voce se inscreveu com sucesso.'
+      signed_up_but_unconfirmed: 'Uma mensagem com um link de confirmacao foi enviado para seu endereco de e-mail. Por favor, abra o link para ativar sua conta.'
+      signed_up_but_inactive: 'Voce se inscreveu com sucesso. No entanto, nao poderia assinar em voce porque a sua conta ainda nao esta ativada.'
+      signed_up_but_locked: 'Voce se inscreveu com sucesso. No entanto, nao poderia assinar em voce porque sua conta esta bloqueada.'
+      updated: 'Voce atualizou sua conta com sucesso.'
+      update_needs_confirmation: "Voce atualizou sua conta com sucesso, mas precisamos verificar o seu novo endereco de email Por favor, verifique seu e-mail e clique no link de confirmacao para finalizar confirmacao do seu endereco de e-mail novo"
+      destroyed: 'Adeus! Sua conta foi cancelada com sucesso. Nos esperamos ve-lo novamente em breve.'
+    unlocks:
+      send_instructions: 'Voce recebera um e-mail com instrucoes sobre como desbloquear a sua conta em poucos minutos.'
+      unlocked: 'Sua conta foi desbloqueada com sucesso. Faca o login para continuar.'
+      send_paranoid_instructions: 'Se a sua conta existe, voce recebera um e-mail com instrucoes sobre como desbloquea-lo em poucos minutos.'
+    omniauth_callbacks:
+      success: 'Sucesso autenticada de %{kind} conta.'
+      failure: 'Nao foi possivel autenticar-lo de %{kind} porque "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instrucoes de confirmacao'
+      reset_password_instructions:
+        subject: 'Reset instrucoes de senha.'
+      unlock_instructions:
+        subject: 'Instrucoes desbloquear'
+

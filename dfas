@@ -1,0 +1,519 @@
+[33mcommit 792bfba588c2e3957b1c14e8d5b2719346a239f6[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Dec 9 19:34:59 2012 -0200
+
+    Estilos de campos e efeitos hover
+    
+    Estendendo estilos a novas telas e fazendo ajustes.
+
+:100644 100644 db7e2bf... c7bd1e2... M	app/views/books/edit.html.erb
+:100644 100644 7dd98c0... f18b287... M	app/views/books/index.html.erb
+:100644 100644 af83ee6... a10178f... M	app/views/books/new.html.erb
+:100644 100644 1f59ca9... 087332f... M	app/views/books/show.html.erb
+:100644 100644 721627a... e9e18a9... M	app/views/users/index.html.erb
+:100644 100644 60e9db1... 95edbde... M	app/views/users_exchanges/edit.html.erb
+:100644 100644 c25465b... 4744dd7... M	app/views/users_exchanges/index.html.erb
+:100644 100644 20d1091... 5bd70e8... M	app/views/users_exchanges/new.html.erb
+:100644 100644 074e63c... 9203385... M	app/views/users_exchanges/show.html.erb
+:100644 100644 66e9efb... 765cdf0... M	app/views/usersbooks/edit.html.erb
+:100644 100644 7bc8f74... 8974c58... M	app/views/usersbooks/index.html.erb
+:100644 100644 d329f29... 669a73b... M	app/views/usersbooks/new.html.erb
+:100644 100644 e95ead3... 531ee62... M	app/views/usersbooks/show.html.erb
+
+[33mcommit 03797028320e1573f9048c0af844ee52f80e3595[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Dec 9 19:19:12 2012 -0200
+
+    CSS de tabelas e links + hover
+    
+    Todas as telas configuradas com novos estilos e efeitos. Tela inicial
+    tembém foi modificada.
+
+:100644 100644 1908022... e0ad54e... M	app/assets/stylesheets/home.css.scss
+:100644 100644 6ac4723... 8648e8c... M	app/views/home/index.html.erb
+:100644 100644 d8fe1d1... abe9bc6... M	app/views/users/edit.html.erb
+:100644 100644 5d3d595... 721627a... M	app/views/users/index.html.erb
+:100644 100644 4a9570c... 7f4cf03... M	app/views/users/new.html.erb
+:100644 100644 e1280c2... 72e1257... M	app/views/users/show.html.erb
+
+[33mcommit 35a8df2614af8eccb98d6f61757fe3b70a299720[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Dec 9 17:30:54 2012 -0200
+
+    HOME estilizada
+
+:100644 100644 59aabba... 1908022... M	app/assets/stylesheets/home.css.scss
+:100644 100644 490bf36... 6ac4723... M	app/views/home/index.html.erb
+:100644 100644 8524092... 70676b9... M	app/views/layouts/application.html.erb
+
+[33mcommit 5033ac1327403aa30e9aed507cfcfa0797e53d52[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Dec 9 00:21:58 2012 -0200
+
+    Configurando Layout
+    
+    HOME: imagem, cor, texto
+    TABELAS: espaçamento, cabeçalho
+
+:000000 100644 0000000... d31055a... A	app/assets/images/Sebo Online.jpg
+:100644 100644 f0ddc68... 59aabba... M	app/assets/stylesheets/home.css.scss
+:100644 100644 5fafb38... 490bf36... M	app/views/home/index.html.erb
+
+[33mcommit 43049e64dc7554536d83c701d3270cf77c0d8ac3[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sat Dec 8 23:16:56 2012 -0200
+
+    USERS: senha, USERS_EXCHANGES: controller
+    
+    USERS: senha de 6 dígitos,
+    USERS_EXCHANGES: ajuste no controller
+
+:100644 100644 5e4f5dc... e3587eb... M	app/controllers/users_exchanges_controller.rb
+:100644 100644 71c93cd... 28883b2... M	app/models/user.rb
+
+[33mcommit cca30d4cea9eaeb862c9248aa9513e0fb0c6efc7[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sat Dec 8 23:13:31 2012 -0200
+
+    Validações USERS_EXCHANGES e USERSBOOK
+    
+    USERSBOOK: "valor" recebe somente float, conforme restrição.
+    
+    USERS_EXCHANGES: Ajustes e mais ajustes sobtre validações. Por fim, a
+    solução ainda não foi encontrada para validar as trocas somente entre
+    usuários diferentes. Mas está quase...
+
+:100644 100644 8385202... 5e4f5dc... M	app/controllers/users_exchanges_controller.rb
+:100644 100644 65b7062... 7b149e7... M	app/models/users_exchange.rb
+:100644 100644 9249774... 23a6746... M	app/models/usersbook.rb
+:100644 100644 78009a8... 67b5942... M	app/views/users_exchanges/_form.html.erb
+
+[33mcommit 14cf975552c3c72a6cb20db3f86fbdd3f9e7bb4c[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sat Dec 8 20:13:11 2012 -0200
+
+    Modelo USER
+    
+    E-mail com estrutura validada.
+    Senha com mínimo 6 caracteres.
+    Validação de login e e-mails únicos.
+    Mensagens de erro se validação falhar.
+
+:100644 100644 4866042... 71c93cd... M	app/models/user.rb
+
+[33mcommit eac9cfe2282207e8f29ba6c34934409dcb8549c5[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sat Dec 8 18:30:41 2012 -0200
+
+    Modelo de USERSBOOKS, BOOKS e USERS + validações
+    
+    1) Tabela USERSBOOKS está com modelo pronto. Faz combo das opções de
+    usuários (apresenta os logins) e livros (apresenta os títulos) e pede
+    para inserir valor. Valor agora só é inserido aqui e não mais na tabela
+    de livros.
+    
+    2) Validações de BOOKS e USERS também estão prontas no modelo. USERS não
+    aceita login repetido, e agora não é mais case-sensitive (login igual
+    com diferença de maiusc / minusc são considerados iguais e não são
+    aceitos).
+
+:100644 100644 c08b593... f41cdfa... M	app/controllers/usersbooks_controller.rb
+:100644 100644 f80b1ab... d04db4f... M	app/models/book.rb
+:100644 100644 6d76311... 4866042... M	app/models/user.rb
+:100644 100644 be0a6bd... 65b7062... M	app/models/users_exchange.rb
+:100644 100644 9fffc51... 9249774... M	app/models/usersbook.rb
+:100644 100644 c51d6dc... 7e9daff... M	app/views/books/_form.html.erb
+:100644 100644 588a33c... af83ee6... M	app/views/books/new.html.erb
+:100644 100644 13343e9... a08aaad... M	app/views/usersbooks/_form.html.erb
+:100644 100644 dc88aff... 7bc8f74... M	app/views/usersbooks/index.html.erb
+:100644 100644 959a53c... 7bb9a7f... M	db/migrate/20121125140638_create_books.rb
+:100644 100644 23e81af... defa8ba... M	db/migrate/20121127005334_create_usersbooks.rb
+:100644 100644 8c5525b... 01a12f7... M	db/migrate/20121127232115_create_users_exchanges.rb
+
+[33mcommit f1f31e82ed8469b81e4e70100e31c870310579fc[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sat Dec 8 14:22:16 2012 -0200
+
+    Labels em Português, Botão CRIAR, Formatação UTF8
+
+:100644 100644 26e759e... 2397e2a... M	app/controllers/books_controller.rb
+:100644 100644 d24a97f... 8385202... M	app/controllers/users_exchanges_controller.rb
+:100644 100644 72d5cd4... c08b593... M	app/controllers/usersbooks_controller.rb
+:100644 100644 77758dd... 9fffc51... M	app/models/usersbook.rb
+:100644 100644 5b76c69... c51d6dc... M	app/views/books/_form.html.erb
+:100644 100644 67e5158... 1f59ca9... M	app/views/books/show.html.erb
+:100644 100644 08797ea... 78009a8... M	app/views/users_exchanges/_form.html.erb
+:100644 100644 e2f72fb... 60e9db1... M	app/views/users_exchanges/edit.html.erb
+:100644 100644 9d125d9... c25465b... M	app/views/users_exchanges/index.html.erb
+:100644 100644 8acdca2... 074e63c... M	app/views/users_exchanges/show.html.erb
+:100644 100644 aca8e90... 13343e9... M	app/views/usersbooks/_form.html.erb
+:100644 100644 eee559f... 66e9efb... M	app/views/usersbooks/edit.html.erb
+:100644 100644 dd0e7c9... dc88aff... M	app/views/usersbooks/index.html.erb
+:100644 100644 fc12964... d329f29... M	app/views/usersbooks/new.html.erb
+:100644 100644 e4a122d... e95ead3... M	app/views/usersbooks/show.html.erb
+
+[33mcommit 88e47b72303b36780fa354ffe3d35ef916841a29[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Tue Dec 4 12:21:21 2012 -0200
+
+    Mais ajustes...
+
+:100644 100644 2110bfa... 26e759e... M	app/controllers/books_controller.rb
+:100644 100644 dcf538d... 90a4582... M	app/controllers/users_controller.rb
+:100644 100644 8fcfcaa... d24a97f... M	app/controllers/users_exchanges_controller.rb
+:100644 100644 1429921... 72d5cd4... M	app/controllers/usersbooks_controller.rb
+:100644 100644 6f68b44... f80b1ab... M	app/models/book.rb
+:100644 100644 4a57cf0... 6d76311... M	app/models/user.rb
+:100644 100644 83998bb... 77758dd... M	app/models/usersbook.rb
+:100644 100644 e6944df... 7dd98c0... M	app/views/books/index.html.erb
+:100644 100644 804247e... 5fafb38... M	app/views/home/index.html.erb
+:100644 100644 d33a6c2... d8fe1d1... M	app/views/users/edit.html.erb
+:100644 100644 587f816... 5d3d595... M	app/views/users/index.html.erb
+:100644 100644 49451f7... 4a9570c... M	app/views/users/new.html.erb
+:100644 100644 b0b59ae... e1280c2... M	app/views/users/show.html.erb
+:100644 100644 b19dead... e9c1491... M	config/application.rb
+:000000 100644 0000000... 9f6e115... A	config/locales/pt.yml
+
+[33mcommit 52b0bccb6463958bd0e6d07894e017ffbb8776c0[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Tue Dec 4 11:18:28 2012 -0200
+
+    Ajustes conforme aula de 29/11/12
+    
+    Relacionamentos e idioma
+
+:100644 100644 a2f39dd... 4577ed1... M	db/migrate/20121125140046_create_users.rb
+:100644 100644 0eb987e... 959a53c... M	db/migrate/20121125140638_create_books.rb
+:100644 100644 04c3ddc... 23e81af... M	db/migrate/20121127005334_create_usersbooks.rb
+
+[33mcommit c88d05c65a3da4d004737d67671bcc390bc55ea5[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Tue Nov 27 22:42:36 2012 -0200
+
+    Ajustes USERSEXCHANGES links e traduções
+    
+    Não sei não... ficou meio estranha...
+    Gerou campo integer, sem eu ter pedido (apaguei)...
+
+:100644 100644 3654e71... 804247e... M	app/views/home/index.html.erb
+:100644 100644 5dbc10d... 08797ea... M	app/views/users_exchanges/_form.html.erb
+:100644 100644 4177cc6... e2f72fb... M	app/views/users_exchanges/edit.html.erb
+:100644 100644 b49b440... 9d125d9... M	app/views/users_exchanges/index.html.erb
+:100644 100644 b067d24... 20d1091... M	app/views/users_exchanges/new.html.erb
+:100644 100644 6fc40ed... 8acdca2... M	app/views/users_exchanges/show.html.erb
+
+[33mcommit 9247ca2264933cbcdd8c13695ab97589162edd6d[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Tue Nov 27 22:02:15 2012 -0200
+
+    Tabela USERSEXCHANGES inserida
+
+:000000 100644 0000000... 7615679... A	app/assets/javascripts/users_exchanges.js.coffee
+:000000 100644 0000000... 4a4db5e... A	app/assets/stylesheets/users_exchanges.css.scss
+:000000 100644 0000000... 8fcfcaa... A	app/controllers/users_exchanges_controller.rb
+:000000 100644 0000000... 5e30f2c... A	app/helpers/users_exchanges_helper.rb
+:000000 100644 0000000... be0a6bd... A	app/models/users_exchange.rb
+:000000 100644 0000000... 5dbc10d... A	app/views/users_exchanges/_form.html.erb
+:000000 100644 0000000... 4177cc6... A	app/views/users_exchanges/edit.html.erb
+:000000 100644 0000000... b49b440... A	app/views/users_exchanges/index.html.erb
+:000000 100644 0000000... b067d24... A	app/views/users_exchanges/new.html.erb
+:000000 100644 0000000... 6fc40ed... A	app/views/users_exchanges/show.html.erb
+:100644 100644 e497ac8... fb41e43... M	config/routes.rb
+:000000 100644 0000000... 8c5525b... A	db/migrate/20121127232115_create_users_exchanges.rb
+:100644 100644 d5f4a79... a68fb55... M	db/schema.rb
+:000000 100644 0000000... b8b881d... A	test/fixtures/users_exchanges.yml
+:000000 100644 0000000... e14ca02... A	test/functional/users_exchanges_controller_test.rb
+:000000 100644 0000000... 2a9cbf0... A	test/unit/helpers/users_exchanges_helper_test.rb
+:000000 100644 0000000... 802aba2... A	test/unit/users_exchange_test.rb
+
+[33mcommit 5e19834d3f0ac91aff60a2d86ca059385ca996ec[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Mon Nov 26 23:42:40 2012 -0200
+
+    Inserindo links nas páginas
+    
+    HOME em todas
+    BOOKS e USERS em Livro de Usuarios
+
+:100644 100644 6b7e22c... e6944df... M	app/views/books/index.html.erb
+:100644 100644 64c5510... 587f816... M	app/views/users/index.html.erb
+:100644 100644 f2fd628... dd0e7c9... M	app/views/usersbooks/index.html.erb
+
+[33mcommit 77bcf6b4b93d505994af0fd4c7cc00c71673d2c7[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Mon Nov 26 23:29:29 2012 -0200
+
+    Tradução de termos para português
+    
+    Tabelas HOME, BOOK, USERS e USERSBOOKS foram alteradas em cada view com
+    termos em português: "voltar", "ver", "deletar", "editar" e mensagem
+    "tem certeza?" ao deletar.
+
+:100644 100644 a907cb4... db7e2bf... M	app/views/books/edit.html.erb
+:100644 100644 b05ea2b... 6b7e22c... M	app/views/books/index.html.erb
+:100644 100644 c9042b2... 588a33c... M	app/views/books/new.html.erb
+:100644 100644 6854c64... 67e5158... M	app/views/books/show.html.erb
+:100644 100644 99bd4cc... d33a6c2... M	app/views/users/edit.html.erb
+:100644 100644 8e02435... 64c5510... M	app/views/users/index.html.erb
+:100644 100644 efc0404... 49451f7... M	app/views/users/new.html.erb
+:100644 100644 ad927b5... b0b59ae... M	app/views/users/show.html.erb
+:100644 100644 a968785... aca8e90... M	app/views/usersbooks/_form.html.erb
+:100644 100644 5a91f1b... eee559f... M	app/views/usersbooks/edit.html.erb
+:100644 100644 1c9d02a... f2fd628... M	app/views/usersbooks/index.html.erb
+:100644 100644 f4fd0d4... fc12964... M	app/views/usersbooks/new.html.erb
+:100644 100644 84263f9... e4a122d... M	app/views/usersbooks/show.html.erb
+
+[33mcommit 92fdf7b79dd09b8fb3a611a33f2beb49dc2f2d84[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Mon Nov 26 23:03:56 2012 -0200
+
+    Ajustes link na HOME para USERSBOOKS.
+
+:100644 100644 4f61aae... 3654e71... M	app/views/home/index.html.erb
+:100644 100644 4dbfdf4... e497ac8... M	config/routes.rb
+
+[33mcommit 09daac5c09a4613eae7dca72750bd90939881f53[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Mon Nov 26 22:57:08 2012 -0200
+
+    Tabela relacional USERSBOOK inserida
+
+:000000 100644 0000000... 7615679... A	app/assets/javascripts/usersbooks.js.coffee
+:000000 100644 0000000... a3ca731... A	app/assets/stylesheets/usersbooks.css.scss
+:000000 100644 0000000... 1429921... A	app/controllers/usersbooks_controller.rb
+:000000 100644 0000000... 91abb84... A	app/helpers/usersbooks_helper.rb
+:000000 100644 0000000... 83998bb... A	app/models/usersbook.rb
+:000000 100644 0000000... a968785... A	app/views/usersbooks/_form.html.erb
+:000000 100644 0000000... 5a91f1b... A	app/views/usersbooks/edit.html.erb
+:000000 100644 0000000... 1c9d02a... A	app/views/usersbooks/index.html.erb
+:000000 100644 0000000... f4fd0d4... A	app/views/usersbooks/new.html.erb
+:000000 100644 0000000... 84263f9... A	app/views/usersbooks/show.html.erb
+:100644 100644 9d7d138... 4dbfdf4... M	config/routes.rb
+:000000 100644 0000000... 04c3ddc... A	db/migrate/20121127005334_create_usersbooks.rb
+:100644 100644 690bf33... d5f4a79... M	db/schema.rb
+:000000 100644 0000000... 0ae4fe6... A	test/fixtures/usersbooks.yml
+:000000 100644 0000000... 54303c2... A	test/functional/usersbooks_controller_test.rb
+:000000 100644 0000000... 67a3ee6... A	test/unit/helpers/usersbooks_helper_test.rb
+:000000 100644 0000000... 85120fb... A	test/unit/usersbook_test.rb
+
+[33mcommit d4805f797d9075c2a7d428d00fbb04cfcb1965cf[m
+Author: Eduardo Junior <eduardo_ij@yahoo.com.br>
+Date:   Sun Nov 25 22:50:33 2012 -0200
+
+    removida pasta de teste
+
+:100644 000000 e69de29... 0000000... D	TesteCommitEdu/TesteCommit.txt
+
+[33mcommit b49a7f1453555fa665a63f3b6254283f58bfab7f[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 13:05:37 2012 -0200
+
+    Labels de USERS e BOOKS em português
+
+:100644 100644 e2dcf9d... 5b76c69... M	app/views/books/_form.html.erb
+:100644 100644 12a2971... b05ea2b... M	app/views/books/index.html.erb
+:100644 100644 b215dd2... 6854c64... M	app/views/books/show.html.erb
+:100644 100644 95bf843... 899cfff... M	app/views/users/_form.html.erb
+:100644 100644 6e7556a... 8e02435... M	app/views/users/index.html.erb
+:100644 100644 758d332... ad927b5... M	app/views/users/show.html.erb
+
+[33mcommit babb21d38b468faa6e42727b60e7f44da11472bf[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 12:47:36 2012 -0200
+
+    USERS e BOOKS na HOME funcionando
+    
+    Acessando http://localhost:3000/ já é posssível ver os links de USERS e
+    BOOKS e navegar neles.
+
+:100644 100644 e07a739... 4f61aae... M	app/views/home/index.html.erb
+:100644 100644 f90c0f9... 9d7d138... M	config/routes.rb
+
+[33mcommit ccb6f3398c3b6f01b3cdf4d340b7a7ca89430d8c[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 12:29:29 2012 -0200
+
+    Ajustando links e rotas
+    
+    Rota para HOME#INDEX
+    Links na HOME para USERS e BOOKS.
+
+:100644 100644 2085730... e07a739... M	app/views/home/index.html.erb
+:100644 100644 ffa1abd... f90c0f9... M	config/routes.rb
+
+[33mcommit e535c298d5e045043aaab9512ffe17fb6a8631bb[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 12:24:29 2012 -0200
+
+    Controller HOME inserido
+
+:000000 100644 0000000... 7615679... A	app/assets/javascripts/home.js.coffee
+:000000 100644 0000000... f0ddc68... A	app/assets/stylesheets/home.css.scss
+:000000 100644 0000000... 95f2992... A	app/controllers/home_controller.rb
+:000000 100644 0000000... 23de56a... A	app/helpers/home_helper.rb
+:000000 100644 0000000... 2085730... A	app/views/home/index.html.erb
+:100644 100644 6f1fd4c... ffa1abd... M	config/routes.rb
+:000000 100644 0000000... 0d9bb47... A	test/functional/home_controller_test.rb
+:000000 100644 0000000... 4740a18... A	test/unit/helpers/home_helper_test.rb
+
+[33mcommit ab2f353d37577c2bbaac86ba4806fe831154c720[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 12:17:47 2012 -0200
+
+    Tabela BOOKS inserida
+
+:000000 100644 0000000... 7615679... A	app/assets/javascripts/books.js.coffee
+:000000 100644 0000000... 9fab565... A	app/assets/stylesheets/books.css.scss
+:000000 100644 0000000... 2110bfa... A	app/controllers/books_controller.rb
+:000000 100644 0000000... 4b9311e... A	app/helpers/books_helper.rb
+:000000 100644 0000000... 6f68b44... A	app/models/book.rb
+:000000 100644 0000000... e2dcf9d... A	app/views/books/_form.html.erb
+:000000 100644 0000000... a907cb4... A	app/views/books/edit.html.erb
+:000000 100644 0000000... 12a2971... A	app/views/books/index.html.erb
+:000000 100644 0000000... c9042b2... A	app/views/books/new.html.erb
+:000000 100644 0000000... b215dd2... A	app/views/books/show.html.erb
+:100644 100644 50602cb... 6f1fd4c... M	config/routes.rb
+:000000 100644 0000000... 0eb987e... A	db/migrate/20121125140638_create_books.rb
+:100644 100644 ddbb56d... 690bf33... M	db/schema.rb
+:000000 100644 0000000... 1a6497f... A	test/fixtures/books.yml
+:000000 100644 0000000... b2ca693... A	test/functional/books_controller_test.rb
+:000000 100644 0000000... e48079d... A	test/unit/book_test.rb
+:000000 100644 0000000... b4547f9... A	test/unit/helpers/books_helper_test.rb
+
+[33mcommit e97964415a8a8a98eba8ae2fbe407829f8bbba23[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 12:02:26 2012 -0200
+
+    Tabela USERS inserida
+
+:000000 100644 0000000... 7615679... A	app/assets/javascripts/users.js.coffee
+:000000 100644 0000000... 6ec6a8f... A	app/assets/stylesheets/scaffolds.css.scss
+:000000 100644 0000000... 31a2eac... A	app/assets/stylesheets/users.css.scss
+:000000 100644 0000000... dcf538d... A	app/controllers/users_controller.rb
+:000000 100644 0000000... 2310a24... A	app/helpers/users_helper.rb
+:000000 100644 0000000... 4a57cf0... A	app/models/user.rb
+:000000 100644 0000000... 95bf843... A	app/views/users/_form.html.erb
+:000000 100644 0000000... 99bd4cc... A	app/views/users/edit.html.erb
+:000000 100644 0000000... 6e7556a... A	app/views/users/index.html.erb
+:000000 100644 0000000... efc0404... A	app/views/users/new.html.erb
+:000000 100644 0000000... 758d332... A	app/views/users/show.html.erb
+:100644 100644 ee2d30c... 50602cb... M	config/routes.rb
+:000000 100644 0000000... a2f39dd... A	db/migrate/20121125140046_create_users.rb
+:000000 100644 0000000... ddbb56d... A	db/schema.rb
+:000000 100644 0000000... 2c27393... A	test/fixtures/users.yml
+:000000 100644 0000000... 9a5355e... A	test/functional/users_controller_test.rb
+:000000 100644 0000000... 96af37a... A	test/unit/helpers/users_helper_test.rb
+:000000 100644 0000000... 82f61e0... A	test/unit/user_test.rb
+
+[33mcommit bfd5472674ddb086fe18fc02892979d818880f85[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Sun Nov 25 11:49:24 2012 -0200
+
+    Deleting index.html
+
+:100644 000000 a1d5099... 0000000... D	public/index.html
+
+[33mcommit 574612fdde1fd2c871b3f8c6f2beca04456101ba[m
+Author: Tales Viegas <tales.viegas@MacBook-Pro-de-TI-Latam-2.local>
+Date:   Sat Nov 24 13:53:52 2012 -0200
+
+    Correcoes
+
+:100644 100644 7203772... 293cb17... M	Gemfile
+:100644 100644 2d38677... 2c347aa... M	Gemfile.lock
+:100644 100644 7a80cc4... 847c354... M	config/initializers/secret_token.rb
+:100644 100644 d359fe2... cb14dd4... M	config/initializers/session_store.rb
+:100644 100644 999df20... da4fb07... M	config/initializers/wrap_parameters.rb
+:100644 100644 753e068... ee2d30c... M	config/routes.rb
+
+[33mcommit f4f8f01137d495053a6bdcfdda4346326bd64e08[m
+Author: Tales Viegas <tales.viegas@MacBook-Pro-de-TI-Latam-2.local>
+Date:   Sat Nov 24 13:16:20 2012 -0200
+
+    Adicionando no github versao enviada pela Cleusi
+
+:100644 000000 e69de29... 0000000... D	'welcome#index'
+
+[33mcommit f9889c284a51a631291594da789ae22199ccb0ed[m
+Author: cleusicolombo <cleusi1@hotmail.com>
+Date:   Thu Nov 22 13:20:11 2012 -0200
+
+    Update config/database.yml
+    
+    Atualizando DB para SQLite3
+
+:100644 100644 48fbbc3... 51a4dd4... M	config/database.yml
+
+[33mcommit 7823eda638ee1a2159f1d005415f669ba75917fa[m
+Author: Eduardo Junior <eduardo_ij@yahoo.com.br>
+Date:   Sun Nov 18 14:48:28 2012 -0200
+
+    teste  commit
+
+:000000 100644 0000000... e69de29... A	TesteCommitEdu/TesteCommit.txt
+
+[33mcommit 365b1b6f959848d5eb37c4a2bed6e839d8dcbd8a[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Fri Nov 16 21:21:30 2012 -0200
+
+    teste add arq.
+
+:000000 100644 0000000... e69de29... A	public/teste.txt
+
+[33mcommit e4c8ad985ceef052b7f8201a17587530bad3ad33[m
+Author: Cleusi Colombo <cleusi1@hotmail.com>
+Date:   Tue Nov 6 22:39:42 2012 -0200
+
+    Pasta Sebo
+
+:000000 100644 0000000... e69de29... A	'welcome#index'
+:000000 100644 0000000... eb3489a... A	.gitignore
+:000000 100644 0000000... 7203772... A	Gemfile
+:000000 100644 0000000... 2d38677... A	Gemfile.lock
+:000000 100644 0000000... 7c36f23... A	README.rdoc
+:000000 100644 0000000... 6691e75... A	Rakefile
+:000000 100644 0000000... d5edc04... A	app/assets/images/rails.png
+:000000 100644 0000000... 9097d83... A	app/assets/javascripts/application.js
+:000000 100644 0000000... 3b5cc66... A	app/assets/stylesheets/application.css
+:000000 100644 0000000... e8065d9... A	app/controllers/application_controller.rb
+:000000 100644 0000000... de6be79... A	app/helpers/application_helper.rb
+:000000 100644 0000000... e69de29... A	app/mailers/.gitkeep
+:000000 100644 0000000... e69de29... A	app/models/.gitkeep
+:000000 100644 0000000... 8524092... A	app/views/layouts/application.html.erb
+:000000 100644 0000000... 081e016... A	config.ru
+:000000 100644 0000000... b19dead... A	config/application.rb
+:000000 100644 0000000... 4489e58... A	config/boot.rb
+:000000 100644 0000000... 48fbbc3... A	config/database.yml
+:000000 100644 0000000... c690b5d... A	config/environment.rb
+:000000 100644 0000000... 8c491c2... A	config/environments/development.rb
+:000000 100644 0000000... 950631d... A	config/environments/production.rb
+:000000 100644 0000000... 1c90e90... A	config/environments/test.rb
+:000000 100644 0000000... 59385cd... A	config/initializers/backtrace_silencers.rb
+:000000 100644 0000000... 5d8d9be... A	config/initializers/inflections.rb
+:000000 100644 0000000... 72aca7e... A	config/initializers/mime_types.rb
+:000000 100644 0000000... 7a80cc4... A	config/initializers/secret_token.rb
+:000000 100644 0000000... d359fe2... A	config/initializers/session_store.rb
+:000000 100644 0000000... 999df20... A	config/initializers/wrap_parameters.rb
+:000000 100644 0000000... 179c14c... A	config/locales/en.yml
+:000000 100644 0000000... 753e068... A	config/routes.rb
+:000000 100644 0000000... 4edb1e8... A	db/seeds.rb
+:000000 100644 0000000... fe41f5c... A	doc/README_FOR_APP
+:000000 100644 0000000... e69de29... A	lib/assets/.gitkeep
+:000000 100644 0000000... e69de29... A	lib/tasks/.gitkeep
+:000000 100644 0000000... e69de29... A	log/.gitkeep
+:000000 100644 0000000... 9a48320... A	public/404.html
+:000000 100644 0000000... 83660ab... A	public/422.html
+:000000 100644 0000000... f3648a0... A	public/500.html
+:000000 100644 0000000... e69de29... A	public/favicon.ico
+:000000 100644 0000000... a1d5099... A	public/index.html
+:000000 100644 0000000... 085187f... A	public/robots.txt
+:000000 100644 0000000... 81eab02... A	script/rails
+:000000 100644 0000000... e69de29... A	test/fixtures/.gitkeep
+:000000 100644 0000000... e69de29... A	test/functional/.gitkeep
+:000000 100644 0000000... e69de29... A	test/integration/.gitkeep
+:000000 100644 0000000... 3fea27b... A	test/performance/browsing_test.rb
+:000000 100644 0000000... 8bf1192... A	test/test_helper.rb
+:000000 100644 0000000... e69de29... A	test/unit/.gitkeep
+:000000 100644 0000000... e69de29... A	vendor/assets/javascripts/.gitkeep
+:000000 100644 0000000... e69de29... A	vendor/assets/stylesheets/.gitkeep
+:000000 100644 0000000... e69de29... A	vendor/plugins/.gitkeep

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121127232115) do
+ActiveRecord::Schema.define(:version => 20121209030223) do
 
   create_table "books", :force => true do |t|
     t.string   "isbn"
@@ -22,13 +22,27 @@ ActiveRecord::Schema.define(:version => 20121127232115) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "login"
     t.string   "password"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "name"
+    t.string   "login"
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+  add_index "users", ["name"], :name => "index_users_on_name"
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
   create_table "users_exchanges", :force => true do |t|
     t.integer  "users_id_1"
@@ -42,12 +56,13 @@ ActiveRecord::Schema.define(:version => 20121127232115) do
   create_table "usersbooks", :force => true do |t|
     t.integer  "users_id"
     t.integer  "books_id"
-    t.float    "value",      :default => 0.0
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
+    t.float    "value", 	 :default => 0.0
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
-  add_index "usersbooks", ["books_id"], :name => "index_usersbooks_on_books_id"
-  add_index "usersbooks", ["users_id"], :name => "index_usersbooks_on_users_id"
+  
+  	add_index "usersbooks", ["books_id"], :name => "index_usersbooks_on_books_id"
+	add_index "usersbooks", ["users_id"], :name => "index_usersbooks_on_users_id"
 
 end

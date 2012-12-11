@@ -18,7 +18,6 @@
       end
     end
   end
-
   validates_with UsersExchangeValidator
+  
 end
-

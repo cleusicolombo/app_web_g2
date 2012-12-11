@@ -1,4 +1,5 @@
 ﻿class UsersController < ApplicationController
+  before_filter :authenticate_user!
   # GET /users
   # GET /users.json
   def index
@@ -8,6 +9,14 @@
       format.html # index.html.erb
       format.json { render json: @users }
     end
+  end
+
+  def resource_name
+    :user
+  end
+
+  def resource
+    @resource ||= User.new
   end
 
   # GET /users/1

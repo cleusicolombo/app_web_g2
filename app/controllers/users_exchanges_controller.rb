@@ -1,4 +1,5 @@
 ﻿class UsersExchangesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /users_exchanges
   # GET /users_exchanges.json
   def index

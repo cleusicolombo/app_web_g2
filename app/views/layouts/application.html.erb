@@ -7,8 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-     
-<%= yield %>
+    <nav>
+      <% if user_signed_in? %>
+        Seja bem vindo <%= current_user.name %>!
+        <%= link_to "Sair", destroy_user_session_path, :method => :delete %>
+      <% else %>
+        <%= link_to "Nao possui uma conta?", new_user_registration_path %>
+        <%= link_to "Entrar", new_user_session_path %>
+      <% end %>
+    </nav>
+   <section id="main">
+      <div class="flash">
+        <% flash.each do |type, message| -%>
+          <div class="message <%= type %>">
+            <div><%= message %></div>
+          </div>
+        <% end -%>
+      </div>
+      <%= yield %>
+    </section>
 
 </body>
 </html>

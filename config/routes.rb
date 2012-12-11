@@ -1,11 +1,14 @@
 Sebo::Application.routes.draw do
 
+  devise_for :users, :path => 'usuarios', :path_names => {:sign_in => 'Logar', :sign_out => 'Sair', :sign_up => 'Cadastrar'}
+
   get "home/index"
 
   resources :usersbooks
   resources :users_exchanges
   resources :books
   resources :users
+  resources :posts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

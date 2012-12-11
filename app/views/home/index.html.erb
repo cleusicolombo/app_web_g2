@@ -16,10 +16,15 @@
 </head>
 
 <body style="background-color: burlywood">
-	<p><%= link_to "Usuários", users_path %></p>
-	<p><%= link_to "Livros", books_path %></p>
-	<p><%= link_to "Livros de Usuários", usersbooks_path %></p>
-	<p><%= link_to "Troca de Livros", users_exchanges_path %></p>
+
+  <div id="user_nav">
+     <% if user_signed_in? %>
+	   	<p><%= link_to "Usuários", users_path %></p>
+		<p><%= link_to "Livros", books_path %></p>
+		<p><%= link_to "Livros de Usuários", usersbooks_path %></p>
+		<p><%= link_to "Troca de Livros", users_exchanges_path %></p>
+     <% end %>  
+   </div>
 
 	<div class="foto2">
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCogyAwoWd6Ep9Q7tvOIO2XZ_kxBXWmGKzQ7XPdfRqQO6rO1quw" 
