@@ -1,25 +1,39 @@
-﻿<p id="notice"><%= notice %></p>
+﻿<h1>Visualização de Trocas de Livros</h1>
 
-<p>
+  <div class="fotoX">
+		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpolUHcFGDL9pyABldvI0W_gB-0C--tyKvmY-XeHJU6m7hnYPe" 
+			width="250"
+			height="200"
+			alt="Sebo OnlineX" 
+			title="Sebo OnlineX"/>
+  </div> 
+
+<div id="notice"><%= notice %></div>
+
+<b/><b/>
+<div id="label1">
   <b>ID Usuário 1:</b>
   <%= @users_exchange.users_id_1 %>
-</p>
+</div>
 
-<p>
+<b/><b/>
+<div id="label2">
   <b>ID Usuário 2:</b>
   <%= @users_exchange.users_id_2 %>
-</p>
+</div>
 
-<p>
+<b/><b/>
+<div id="label1">
   <b>ID Livro 1:</b>
   <%= @users_exchange.books_id_1 %>
-</p>
+</div>
 
-<p>
+<b/><b/>
+<div id="label2">
   <b>ID Livro 2:</b>
   <%= @users_exchange.books_id_2 %>
-</p>
+</div>
 
 
-<p><%= link_to 'Editar', edit_users_exchange_path(@users_exchange) %> </p>
-<p><%= link_to 'Voltar', users_exchanges_path %></p>
+<p id="botao"><%= link_to 'Editar', edit_users_exchange_path(@users_exchange) %> </p>
+<p id="botao"><%= link_to 'Voltar', users_exchanges_path %></p>

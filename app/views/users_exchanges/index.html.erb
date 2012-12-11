@@ -13,10 +13,8 @@
   <tr>
     <td><%= users_exchange.users_id_1 %></td>
     <td><%= users_exchange.users_id_2 %></td>
-    <td><%= users_exchange.integer %></td>
     <td><%= users_exchange.books_id_1 %></td>
     <td><%= users_exchange.books_id_2 %></td>
-    <td><%= users_exchange.integer %></td>
     <td><%= link_to 'Ver', users_exchange %>
     <%= link_to 'Editar', edit_users_exchange_path(users_exchange) %>
     <%= link_to 'Deletar', users_exchange, confirm: 'Tem certeza?', method: :delete %></td>
@@ -24,9 +22,5 @@
 <% end %>
 </table>
 
-<br />
-
-<p><%= link_to 'Nova Troca de Livro', new_users_exchange_path %></p>
-<p><%= link_to "Capa", root_path %></p>
-<p><%= link_to "Usuários", users_path %></p>
-<p><%= link_to "Livros", books_path %></p>
+<p id="botao"><%= link_to 'Nova Troca', new_users_exchange_path %></p>
+<p id="botao"><%= link_to 'Capa', root_path %></p>

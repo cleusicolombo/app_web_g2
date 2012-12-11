@@ -12,23 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :usuário1 %><br />
-    <%= f.collection_select(:users_id_1, User.all, :id, :login) %>
+    <%= f.label :usuário1 %>
+    <%= f.collection_select(:users_id_1, User.all, :id, :login) %><br />
   </div>
   <div class="field">
-    <%= f.label :usuário2 %><br />
-    <%= f.collection_select(:users_id_2, User.all, :id, :login) %>
+    <%= f.label :usuário2 %>
+    <%= f.collection_select(:users_id_2, User.all, :id, :login) %><br />
   </div>
   <div class="field">
-    <%= f.label :título1 %><br />
-    <%= f.collection_select(:books_id_1, Book.all, :id, :title) %>
+    <%= f.label :título1 %>
+    <%= f.collection_select(:books_id_1, Book.all, :id, :title) %><br />
   </div>
   <div class="field">
-    <%= f.label :título2 %><br />
-    <%= f.collection_select(:books_id_2, Book.all, :id, :title) %>
+    <%= f.label :título2 %>
+    <%= f.collection_select(:books_id_2, Book.all, :id, :title) %><br />
   </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar"%>
   </div>
 <% end %>
