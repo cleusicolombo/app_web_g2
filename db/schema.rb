@@ -56,13 +56,12 @@ ActiveRecord::Schema.define(:version => 20121209030223) do
   create_table "usersbooks", :force => true do |t|
     t.integer  "users_id"
     t.integer  "books_id"
-    t.float    "value", 	 :default => 0.0
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.float    "value",      :default => 0.0
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
-  
-  	add_index "usersbooks", ["books_id"], :name => "index_usersbooks_on_books_id"
-	add_index "usersbooks", ["users_id"], :name => "index_usersbooks_on_users_id"
+  add_index "usersbooks", ["books_id"], :name => "index_usersbooks_on_books_id"
+  add_index "usersbooks", ["users_id"], :name => "index_usersbooks_on_users_id"
 
 end

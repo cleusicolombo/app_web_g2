@@ -2,8 +2,8 @@
   hello: "Ola Mundo"
   helpers:
     submit:
-      create: "Criar %{model}"
-      update: "Atualizar %{model}"    
+      create: "Criar"
+      update: "Atualizar"    
   # Active Record
     activerecord:
       models:
