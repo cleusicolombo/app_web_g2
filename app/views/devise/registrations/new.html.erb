@@ -1,23 +1,43 @@
-﻿<h2>Cadastro de Usuários</h2>
+﻿<!DOCTYPE html>
+<html>
+<head>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+	<h1>Cadastro de Usuários</h1>
 
-  <div><%= f.label :name,"Nome" %><br />
-  <%= f.text_field :name %></div>
+</head>
+<body style="background-color: burlywood">
+
+
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+	<%= devise_error_messages! %>
+
+  <div class="field"><%= f.label :name,"Nome" %>
+  <%= f.text_field :name %></div><br />
      
-  <div><%= f.label :email,"E-mail" %><br />
-  <%= f.text_field :email %></div>
+  <div class="field"><%= f.label :email,"E-mail" %>
+  <%= f.text_field :email %></div><br />
 
-  <div><%= f.label :login,"Login" %><br />
-  <%= f.text_field :login %></div>
+  <div class="field"><%= f.label :login,"Login" %>
+  <%= f.text_field :login %></div><br />
 
-  <div><%= f.label :password,"Senha" %><br />
-  <%= f.password_field :password %></div>
+  <div class="field"><%= f.label :password,"Senha" %>
+  <%= f.password_field :password %></div><br />
 
-  <div><%= f.label :password_confirmation,"Confirme a senha" %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <div class="field"><%= f.label :password_confirmation,"Confirme a senha" %>
+  <%= f.password_field :password_confirmation %></div><br />
 
-  <div><%= f.submit "Cadastrar" %></div>
+  <div><%= f.submit "Cadastrar" %></div><br />
+  
+  <div class="fotoX">
+		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlAAzZHAK5MTGjyTTP5KBAdJJ3IX7flMDz7H9NNqZISzcN-5p" 
+			width="400"
+			height="300"
+			alt="Sebo OnlineX" 
+			title="Sebo OnlineX"/>
+  </div> 
+  
 <% end %>
 
+
+</body>
+</html>

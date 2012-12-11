@@ -75,6 +75,18 @@ h1:hover{
    box-shadow: 0 0 10px chocolate;
 }
 
+.fotoX{
+	position: absolute;
+	top: 210px;
+	right: 50px;
+	border: 5;  
+}
+
+.fotoX:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px chocolate;
+}
+
 ul
 {
 	list-style-type: none;
@@ -102,6 +114,20 @@ p
 	font-size: 2px;
 	color: white;
 	background: chocolate;
+	cursor: pointer;
+}
+
+#link{
+	float: right;
+	border: 1px solid brown;
+	width: 15em;
+	padding: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Helvetica Neue',helvetica,'microsoft sans serif',arial,sans-serif;
+	font-size: 10px;
+	color: chocolate;
+	background: blanchedalmond;
 	cursor: pointer;
 }
 
@@ -153,9 +179,9 @@ td{
 	color: chocolate;
 	background-color: khaki;
 	font-size: 20px;
-	float: left;
-	padding:20px;
-	text-align: center;
+	padding:15px;
+	width: 20em;
+	text-align: left;
 }
 
 #cssmenu {
