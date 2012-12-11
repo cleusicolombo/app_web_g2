@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :usuário %><br />
-    <%= f.collection_select(:users_id, User.all, :id, :login) %>
+    <%= f.label :usuário %>
+    <%= f.collection_select(:users_id, User.all, :id, :login) %><br />
 	
   </div>
   <div class="field">
-    <%= f.label :título %><br />
-    <%= f.collection_select(:books_id, Book.all, :id, :title) %>
+    <%= f.label :título %>
+    <%= f.collection_select(:books_id, Book.all, :id, :title) %><br />
 
   </div>
   <div class="field">
-    <%= f.label :valor %><br />
-    <%= f.text_field :value %>
+    <%= f.label :valor %>
+    <%= f.text_field :value %><br />
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar"%>
   </div>
 <% end %>
