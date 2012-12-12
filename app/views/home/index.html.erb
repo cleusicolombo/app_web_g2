@@ -19,10 +19,10 @@
 
   <div id="user_nav">
      <% if user_signed_in? %>
-	   	<p><%= link_to "Usuários", users_path %></p>
-		<p><%= link_to "Livros", books_path %></p>
-		<p><%= link_to "Livros de Usuários", usersbooks_path %></p>
-		<p><%= link_to "Troca de Livros", users_exchanges_path %></p>
+	   	<p id="menu"><%= link_to "Usuários", users_path %></p>
+		<p id="menu"><%= link_to "Livros", books_path %></p>
+		<p id="menu"><%= link_to "Livros de Usuários", usersbooks_path %></p>
+		<p id="menu"><%= link_to "Troca de Livros", users_exchanges_path %></p>
      <% end %>  
    </div>
 
